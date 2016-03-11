@@ -47,15 +47,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-#primary{
-	width: 50%;
-	float: left; 
-	}
-
-#secondary{
-	width: 20%
-	float: right;
-	}
 html {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
@@ -561,16 +552,13 @@ a:active {
 	outline: 0;
 }
 
-/*-------------------------------------------------------------
+/*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
 	clear: both;
 	display: block;
-	float: center;
 	width: 100%;
-	text-decoration: bold;
-	font: Times New Roman;
 }
 
 .main-navigation ul {
