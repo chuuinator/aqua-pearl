@@ -604,6 +604,7 @@ text-decoration: bold;
 display: inline-block;
 vertical-align: top;
 border: solid;
+text-align: center;
 }
 
 .sub-menu {
