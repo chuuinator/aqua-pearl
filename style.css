@@ -567,23 +567,29 @@ a:active {
 	padding-left: 0;
 }
 
+/* This makes the spaces between the words in the menu */
 .main-navigation li {
 	position: relative;
 	display: inline-block;
-	padding: 10px 40px;
+	padding: 10px 60px;
 }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	color: red;
 }
 
+/* This is the submenu */
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	position: absolute;
-	top: 1.5em;
+	top: 2em;
 	left: -999em;
 	z-index: 99999;
+	width: 200px;
+	text-align: left;
+	padding-top: 20px;
 }
 
 .main-navigation ul ul ul {
@@ -595,24 +601,17 @@ a:active {
 	width: 200px;
 }
 
-.main-navigation ul ul li {
+.main-navigation ul ul li {}
 
-}
+/* This is the main menu */
 #primary-menu {
 width: 100%;
 text-decoration: bold;
 display: inline-block;
-border: solid;
 text-align: center;
+background-color: black;
+font-family: "Courier New", Lucida, Console;
 }
-
-
-.sub-menu {
-width: 100px;
-text-align: left;
-
-}
-
 
 .main-navigation li:hover > a,
 .main-navigation li.focus > a {
