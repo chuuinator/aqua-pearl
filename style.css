@@ -570,6 +570,7 @@ a:active {
 .main-navigation li {
 	position: relative;
 	display: inline-block;
+	padding: 10px 40px;
 }
 
 .main-navigation a {
@@ -597,15 +598,14 @@ a:active {
 .main-navigation ul ul li {
 
 }
-
 #primary-menu {
 width: 100%;
 text-decoration: bold;
 display: inline-block;
 border: solid;
 text-align: center;
-padding: 20px;
 }
+
 
 .sub-menu {
 width: 100px;
