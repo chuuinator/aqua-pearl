@@ -604,10 +604,11 @@ text-decoration: bold;
 display: inline-block;
 border: solid;
 text-align: center;
+padding: 20px;
 }
 
 .sub-menu {
-width: 150px;
+width: 100px;
 text-align: left;
 
 }
