@@ -569,7 +569,6 @@ a:active {
 }
 
 .main-navigation li {
-	float: left;
 	position: relative;
 }
 
@@ -580,7 +579,6 @@ a:active {
 
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
 	position: absolute;
 	top: 1.5em;
 	left: -999em;
@@ -599,6 +597,19 @@ a:active {
 .main-navigation ul ul li {
 
 }
+
+#primary-menu {
+width: 100%
+text-decoration: bold;
+display: inline-block;
+vertical-align: top;
+border: solid;
+}
+
+.sub-menu {
+width: 300px;
+}
+
 
 .main-navigation li:hover > a,
 .main-navigation li.focus > a {
