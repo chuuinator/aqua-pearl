@@ -561,14 +561,16 @@ a:active {
 	outline: 0;
 }
 
-/*--------------------------------------------------------------
+/*-------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
+	float: center;
 	width: 100%;
+	text-decoration: bold;
+	font: Times New Roman;
 }
 
 .main-navigation ul {
