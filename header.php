@@ -22,6 +22,9 @@
 
 <body <?php body_class(); ?>
       <div class="search"><?php get_search_form();?></div>
+<?php wp_register(); ?>
+<?php wp_loginout(); ?>
+
     
     
 <div id="page" class="site">
