@@ -151,35 +151,4 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
-//adds the script in the head of your theme
-add_action ('wp_head' , 'add_fb_button_script');
- 
-function add_fb_button_script() {
-	?>
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1&appId=YOUR-APP-ID";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-		</script>
-	<?php
-}
- 
-//adds the button on the right to the social icons in header
-add_filter ('tc_social_in_header' , 'add_fb_button', 10, 2);
-function add_fb_button($html, $resp) {
-	$class =  ('resp' == $resp) ? '':'span5' 
-	?>
-	<div class="social-block <?php echo $class ?>">
-		
-		<?php if ( 0 != tc__f( '__get_option', 'tc_social_in_header') ) : ?>
-       		<?php echo tc__f( '__get_socials' ) ?>
-       	<?php endif; ?>
- 
-	     <div class="fb-like" data-href="YOUR-FB-PAGE-URL" data-width="50" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="false" data-send="false"></div>
-     </div><!--.social-block-->
-	<?php
-}
+
