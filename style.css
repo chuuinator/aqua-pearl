@@ -263,6 +263,12 @@ th {
 	padding: 0;
 }
 
+.search-form {
+	padding: 10px;
+	background-color: #CCCCFF;
+	border-bottom-style: ridge;
+}
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
