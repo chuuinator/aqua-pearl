@@ -22,25 +22,8 @@
 
 <body <?php body_class(); ?>
       
-<div class="container">
-	<div class="container-inner">
-		<div class="toggle-search"><i class="fa fa-search"></i></div>
-		<div class="search-expand">
-			<div class="search-expand-inner">
-				<?php get_search_form(); ?>
-			</div>
-		</div>
-		<div class="my-logon">
-			<?php dynamic_sidebar('sidebar-id'); ?>
-		</div>
-	</div><!--/.container-inner-->
-</div><!--/.container-->
-
-    </div>
-
-
-    
-    
+<div class="search"> <?php get_search_form();?>
+ 
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'aqua-pearl' ); ?></a>
 

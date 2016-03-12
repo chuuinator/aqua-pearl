@@ -943,28 +943,4 @@ object {
 	display: block;
 }
 
-/* move search icon and search box left */
-.toggle-search, .search-expand {
-  right: 150px;
-}
 
-/* position logon widget up and at right edge */
-.my-logon {
-  position:absolute;
-  top: -50px;
-  right: 0;
-}
-
-/* move the flag widget left to line up under logon widget */
-.widget_glt_widget {
-  margin-left: -35px;
-}
-
-/* reposition logon widget for mobile display */
-@media only screen and (max-width: 719px) {
-  .my-logon {
-    right: auto;
-    left:75px;
-    top:0;
-  }
-}
