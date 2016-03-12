@@ -22,6 +22,8 @@
 
 <body <?php body_class(); ?>
       <div class="search"><?php get_search_form();?>
+
+<?php wp_loginout(); ?>
     </div>
 
 
