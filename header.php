@@ -21,8 +21,20 @@
 </head>
 
 <body <?php body_class(); ?>
-      <div class="search"> <?php get_search_form();?>
-
+      
+<div class="container">
+	<div class="container-inner">
+		<div class="toggle-search"><i class="fa fa-search"></i></div>
+		<div class="search-expand">
+			<div class="search-expand-inner">
+				<?php get_search_form(); ?>
+			</div>
+		</div>
+		<div class="my-logon">
+			<?php dynamic_sidebar('sidebar-id'); ?>
+		</div>
+	</div><!--/.container-inner-->
+</div><!--/.container-->
 
     </div>
 
