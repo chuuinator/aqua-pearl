@@ -20,7 +20,8 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php get_search_form();?>>
+<body <?php body_class(); ?>
+      <div class="search"><?php get_search_form();?></div>
     
     
 <div id="page" class="site">
