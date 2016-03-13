@@ -49,6 +49,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 #content{
 	width: 90%;
+	background: url('images/background.jpg')
 	}
 #primary{
 	width: 30%;
