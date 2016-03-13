@@ -29,7 +29,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="/images/logo.jpg"></a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="/wp-content/uploads/2016/03/logo.jpg"></a>
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
