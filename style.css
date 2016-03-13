@@ -281,9 +281,10 @@ th {
 }
 
 .search-form {
-	padding: 10px;
+	padding: 20px;
 	background-color: #CCCCFF;
 	border-bottom-style: ridge;
+    
 }
 
 /*--------------------------------------------------------------
@@ -967,6 +968,7 @@ object {
 .login {
     float:right;
     margin-right: 20px;
+    margin-top: 20px;
     
 }
 
