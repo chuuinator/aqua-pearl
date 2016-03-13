@@ -21,28 +21,24 @@
 </head>
 
 <body <?php body_class(); ?>
-      
+<table>
+    <tr>
+    <td>
 <div class="search"> <?php get_search_form();?>
- 
+    </td>
+    
+   <td>
+
+<a href="" >Login</a>
+        </td></tr>
+    </table>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'aqua-pearl' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="/wp-content/uploads/2016/03/logo.jpg"></a>
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
-
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="wp-content/uploads/2016/03/logo.jpg"></a>
+			
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
