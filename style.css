@@ -68,6 +68,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	margin: 2em;
 	border-width: 0.5em;
 	border-color: #000;
+	border-style: solid;
 	float: right;
 	}
 /*--------------------------------------------------------------
