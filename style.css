@@ -72,8 +72,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	float: right;
 	}
 #secondary {
-	position: fixed;
+	position: relative;
 	bottom: 0;
+	width: 100%;
 	}
 /*--------------------------------------------------------------
 # Normalize
