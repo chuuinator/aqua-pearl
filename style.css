@@ -281,7 +281,8 @@ th {
 }
 
 .search-form {
-	padding: 20px;
+	margin-top: 20px;
+    margin-left: 20px;
 	background-color: #CCCCFF;
 	border-bottom-style: ridge;
     
