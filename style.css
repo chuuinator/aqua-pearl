@@ -23,6 +23,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+# Layout
 # Normalize
 # Typography
 # Elements
@@ -43,7 +44,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+#container{
+	width: 90%;
+	}
+#primary{
+	width: 30%;
+	height: 30%;
+	overflow: scroll;
+	}
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
