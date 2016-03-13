@@ -52,8 +52,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	}
 #primary{
 	width: 30%;
-	height: 30%;
+	height: 20%;
 	overflow: scroll;
+	padding: 0.5em;
+	border-style:solid;
+	border-width: 2em;
+	border-color: #fff;
+	float: left;
 	}
 /*--------------------------------------------------------------
 # Normalize
