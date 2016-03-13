@@ -23,11 +23,11 @@
     
 <body <?php body_class(); ?>
 
-<span id="topNav">     
+    
 <?php get_search_form();?>
-  
+  &nbsp;&nbsp;
 <a href="" >Login</a>
-    </span>
+    
         
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'aqua-pearl' ); ?></a>
