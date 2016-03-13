@@ -21,17 +21,13 @@
 </head>
 
 <body <?php body_class(); ?>
-<table>
-    <tr>
-    <td>
-<div class="search"> <?php get_search_form();?>
-    </td>
-    
-   <td>
 
+<div >       
+<?php get_search_form();?>
+  &NBSP;&NBSP;  
 <a href="" >Login</a>
-        </td></tr>
-    </table>
+    </DIV>
+        
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'aqua-pearl' ); ?></a>
 
