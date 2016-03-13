@@ -14,8 +14,8 @@
  */
 
 get_header(); ?>
-
-	<div id="primary" class="content-area">
+	<div id="container">
+		<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php
@@ -51,6 +51,15 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+		<div id="videoarea">
+			<?php
+				$post_id = 2;
+				$queried_post = get_post($post_id);
+			?>
+			<h2><?php echo $queried_post->post_title; ?></h2>
+			<?php echo $queried_post->post_content;?>
+		</div><!--videoarea--!>
+	</div><!--#container-->
 
 <?php
 get_sidebar();
