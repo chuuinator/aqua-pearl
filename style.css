@@ -55,8 +55,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	height: 20%;
 	overflow: scroll;
 	padding: 0.5em;
+	margin: 2em;
 	border-style:solid;
-	border-width: 2em;
+	border-width: 1em;
 	border-color: #000;
 	float: left;
 	}
