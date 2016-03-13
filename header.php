@@ -26,7 +26,8 @@
     
 <?php get_search_form();?>
  
-<button style="float:right">Login</button>
+<button class="login" >Login</button>
+<p/>
     
         
 <div id="page" class="site">
