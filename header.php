@@ -25,10 +25,8 @@
 
     
 <?php get_search_form();?>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="" style="float:right" >Login</a>
-<button>Login</button>
+ 
+<button style="float:right">Login</button>
     
         
 <div id="page" class="site">
