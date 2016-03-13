@@ -966,9 +966,7 @@ object {
 
 .login {
     float:right;
-    padding: 10px;
-    padding-right: 20px;
-    padding-top: 20px;
+    margin-right: 20px;
     
 }
 
