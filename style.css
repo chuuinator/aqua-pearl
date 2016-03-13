@@ -49,7 +49,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 #content{
 	width: 100%;
-	background: url('images/background.jpg')
+	background-image: url('images/background.jpg')
 	}
 #primary{
 	background-color: #fff;
