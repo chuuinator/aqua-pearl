@@ -53,7 +53,7 @@ get_header(); ?>
 	</div><!-- #primary -->
 		<div id="videoarea">
 			<?php
-				$post_id = 2;
+				$post_id = 17;
 				$queried_post = get_post($post_id);
 			?>
 			<h2><?php echo $queried_post->post_title; ?></h2>
