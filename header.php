@@ -22,11 +22,11 @@
 
 <body <?php body_class(); ?>
 
-<div >       
+     
 <?php get_search_form();?>
-  &NBSP;&NBSP;  
+  
 <a href="" >Login</a>
-    </DIV>
+
         
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'aqua-pearl' ); ?></a>
