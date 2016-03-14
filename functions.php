@@ -151,4 +151,8 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
+//New footer menu
+
+register_nav_menus(array('secondary'=>__('Footer Menu'),));
+
 
