@@ -23,7 +23,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Layout
 # Normalize
 # Typography
 # Elements
@@ -44,39 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Layout
---------------------------------------------------------------*/
-#content{
-	width: 90%;
-	}
-#primary{
-	width: 30%;
-	height: 30%;
-	overflow: hidden;
-	padding: 0.5em;
-	margin: 10em 5em;
-	border-style:solid;
-	border-width: 0.5em;
-	border-color: #000;
-	float: left;
-	}
-#videoarea{
-	width: 30%;
-	height: 30%;
-	padding: 0.5em;
-	margin: 10em 2em;
-	border-width: 0.5em;
-	border-color: #000;
-	border-style: solid;
-	float: right;
-	}
-#secondary {
-	position: relative;
-	bottom: 0;
-	width: 100%;
-	height: 30%;
-	}
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -294,14 +261,6 @@ table {
 td,
 th {
 	padding: 0;
-}
-
-.search-form {
-	padding-top: 20px;
-    padding-left: 20px;
-	background-color: #CCCCFF;
-	border-bottom-style: ridge;
-    
 }
 
 /*--------------------------------------------------------------
@@ -618,17 +577,17 @@ a:active {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
-	color: red;
+	color: black;
 }
 
 /* This is the submenu */
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	position: absolute;
-	top: 2em;
+	top: 42px;
 	left: -999em;
 	z-index: 99999;
-	width: 200px;
+	width: 100px;
 	text-align: left;
 	padding-top: 20px;
 }
@@ -642,24 +601,32 @@ a:active {
 	width: 200px;
 }
 
-.main-navigation ul ul li {}
+.main-navigation ul ul li {
+padding: 5px 10px;}
 
 /* This is the main menu */
 #primary-menu {
 width: 100%;
-text-decoration: bold;
 display: inline-block;
 text-align: center;
-background-color: black;
+font-weight: bold;
+background-color: white;
 font-family: "Courier New", Lucida, Console;
+border: solid;
+border-color: #33CCCC;
+
 }
 
+/* This changes the color of the hover link */
 .main-navigation li:hover > a,
 .main-navigation li.focus > a {
+color: #33CCCC;
+text-decoration: underline;
 }
 
 .main-navigation ul ul :hover > a,
 .main-navigation ul ul .focus > a {
+color: pink;
 }
 
 .main-navigation ul ul a:hover,
@@ -976,20 +943,4 @@ object {
 
 .gallery-caption {
 	display: block;
-}
-
-/*--------------------------------------------------------------
-## Login Styling
---------------------------------------------------------------*/
-
-.login {
-    float:right;
-    margin-right: 20px;
-    margin-top: 20px;
-    
-}
-
-.login:hover {
-    
-    
 }
