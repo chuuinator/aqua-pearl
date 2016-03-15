@@ -50,8 +50,10 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-		<div id="videoarea">
-			<?php
+		<div id="videoarea"> 
+			<?php /* This code allows for the post with id #17 to display
+					in the "videoarea" div space. This code will display 
+					the title and the content of the post.	*/
 				$post_id = 17;
 				$queried_post = get_post($post_id);
 			?>
