@@ -1,18 +1,18 @@
 <?php
 	
-function add_submenu() {
+function cd_add_submenu() {
 		add_submenu_page( 'themes.php', 'My Super Awesome Options Page', 'Theme Options', 'manage_options', 'theme_options', 'my_theme_options_page');
 	}
-add_action( 'admin_menu', 'add_submenu' );
+add_action( 'admin_menu', 'cd_add_submenu' );
 	
 
 function cd_settings_init() { 
-	register_setting( 'theme_options', 'options_settings' );
+	register_setting( 'theme_options', 'cd_options_settings' );
 	
 	add_settings_section(
-		'options_page_section', 
+		'cd_options_page_section', 
 		'Your section description', 
-		'options_page_section_callback', 
+		'cd_options_page_section_callback', 
 		'theme_options'
 	);
 	
@@ -21,27 +21,27 @@ function cd_settings_init() {
 	}
 
 	add_settings_field( 
-		'text_field', 
+		'cd_text_field', 
 		'Enter your text', 
-		'text_field_render', 
+		'cd_text_field_render', 
 		'theme_options', 
-		'options_page_section' 
+		'cd_options_page_section' 
 	);
 
 	add_settings_field( 
-		'checkbox_field', 
+		'cd_checkbox_field', 
 		'Check your preference', 
-		'checkbox_field_render', 
+		'cd_checkbox_field_render', 
 		'theme_options', 
-		'options_page_section'  
+		'cd_options_page_section'  
 	);
 
 	add_settings_field( 
-		'radio_field', 
+		'cd_radio_field', 
 		'Choose an option', 
-		'radio_field_render', 
+		'cd_radio_field_render', 
 		'theme_options', 
-		'options_page_section'  
+		'cd_options_page_section'  
 	);
 	
 	add_settings_field( 
@@ -53,50 +53,50 @@ function cd_settings_init() {
 	);
 	
 	add_settings_field( 
-		'select_field', 
+		'cd_select_field', 
 		'Choose from the dropdown', 
-		'select_field_render', 
+		'cd_select_field_render', 
 		'theme_options', 
-		'options_page_section'  
+		'cd_options_page_section'  
 	);
 
 	function cd_text_field_render() { 
-		$options = get_option( 'options_settings' );
+		$options = get_option( 'cd_options_settings' );
 		?>
-		<input type="text" name="options_settings[text_field]" value="<?php if (isset($options['text_field'])) echo $options['text_field']; ?>" />
+		<input type="text" name="cd_options_settings[cd_text_field]" value="<?php if (isset($options['cd_text_field'])) echo $options['cd_text_field']; ?>" />
 		<?php
 	}
 	
-	function checkbox_field_render() { 
-		$options = get_option( 'options_settings' );
+	function cd_checkbox_field_render() { 
+		$options = get_option( 'cd_options_settings' );
 	?>
-		<input type="checkbox" name="options_settings[checkbox_field]" <?php if (isset($options['checkbox_field'])) checked( 'on', ($options['checkbox_field']) ) ; ?> value="on" />
+		<input type="checkbox" name="cd_options_settings[cd_checkbox_field]" <?php if (isset($options['cd_checkbox_field'])) checked( 'on', ($options['cd_checkbox_field']) ) ; ?> value="on" />
 		<label>Turn it On</label> 
 		<?php	
 	}
 	
 	function cd_radio_field_render() { 
-		$options = get_option( 'options_settings' );
+		$options = get_option( 'cd_options_settings' );
 		?>
-		<input type="radio" name="options_settings[radio_field]" <?php if (isset($options['radio_field'])) checked( $options['radio_field'], 1 ); ?> value="1" /> <label>Option One</label><br />
-		<input type="radio" name="options_settings[radio_field]" <?php if (isset($options['radio_field'])) checked( $options['radio_field'], 2 ); ?> value="2" /> <label>Option Two</label><br />
-		<input type="radio" name="options_settings[radio_field]" <?php if (isset($options['radio_field'])) checked( $options['radio_field'], 3 ); ?> value="3" /> <label>Option Three</label>
+		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options['cd_radio_field'])) checked( $options['cd_radio_field'], 1 ); ?> value="1" /> <label>Option One</label><br />
+		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options['cd_radio_field'])) checked( $options['cd_radio_field'], 2 ); ?> value="2" /> <label>Option Two</label><br />
+		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options['cd_radio_field'])) checked( $options['cd_radio_field'], 3 ); ?> value="3" /> <label>Option Three</label>
 		<?php
 	}
 	
-	function textarea_field_render() { 
-		$options = get_option( 'options_settings' );
+	function cd_textarea_field_render() { 
+		$options = get_option( 'cd_options_settings' );
 		?>
-		<textarea cols="40" rows="5" name="options_settings[textarea_field]"><?php if (isset($options['textarea_field'])) echo $options['textarea_field']; ?></textarea>
+		<textarea cols="40" rows="5" name="cd_options_settings[cd_textarea_field]"><?php if (isset($options['cd_textarea_field'])) echo $options['cd_textarea_field']; ?></textarea>
 		<?php
 	}
 
-	function select_field_render() { 
-		$options = get_option( 'options_settings' );
+	function cd_select_field_render() { 
+		$options = get_option( 'cd_options_settings' );
 		?>
-		<select name="options_settings[select_field]">
-			<option value="1" <?php if (isset($options['select_field'])) selected( $options['select_field'], 1 ); ?>>Option 1</option>
-			<option value="2" <?php if (isset($options['select_field'])) selected( $options['select_field'], 2 ); ?>>Option 2</option>
+		<select name="cd_options_settings[cd_select_field]">
+			<option value="1" <?php if (isset($options['cd_select_field'])) selected( $options['cd_select_field'], 1 ); ?>>Option 1</option>
+			<option value="2" <?php if (isset($options['cd_select_field'])) selected( $options['cd_select_field'], 2 ); ?>>Option 2</option>
 		</select>
 	<?php
 	}
@@ -116,4 +116,4 @@ function cd_settings_init() {
 
 }
 
-add_action( 'admin_init', 'settings_init' );
+add_action( 'admin_init', 'cd_settings_init' );
