@@ -790,6 +790,11 @@ color: pink;
 	width: 50%;
 }
 
+#categories-2{
+	background-color: #fff;
+	}
+
+.cat-item
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -1064,3 +1069,21 @@ object {
 
 =======
 >>>>>>> origin/master
+
+.widget-title{
+	background-color: #33CCCC;
+	color: #fff;
+	width:20%;
+	}
+li.cat-item.cat-item-3{
+	background-color: #33CCCC;
+	width: 15%
+	}	
+li.cat-item.cat-item-2{
+	background-color: #33CCCC;
+	width: 15%
+	}	
+li.cat-item.cat-item-5{
+	background-color: #33CCCC;
+	width: 15%
+	}
