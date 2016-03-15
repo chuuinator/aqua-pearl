@@ -155,4 +155,7 @@ require get_template_directory() . '/inc/jetpack.php';
 
 register_nav_menus(array('secondary'=>__('Footer Menu'),));
 
+//New Options Page
+require get_stylesheet_directory() .'/inc/options.php';
+
 
