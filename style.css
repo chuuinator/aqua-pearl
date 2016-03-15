@@ -127,6 +127,7 @@ nav,
 section,
 summary {
 	display: block;
+	font-family: 'Century Gothic', 'Century Gothic', 'Apple Gothic', sans-serif;
 }
 
 audio,
