@@ -81,6 +81,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	bottom: 0;
 	width: 100%;
 	height: 30%;
+	border: solid;
+	border-color: #33CCCC;
 	}
 #footer-menu{
 	width: 100%;
