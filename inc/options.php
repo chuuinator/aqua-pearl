@@ -69,15 +69,6 @@ function settings_init() {
 	}
 	
 	function radio_field_render() { 
-		$options = array( 
-			array("name" => "category posts to show on the front page",
-				"desc" => "Select the category you want to include. All pages are excluded by default",
-				"id" => $shortname."_front_page_first_section",
-				"type" => "select",
-				"options" => mnt_get_category_array($shortname."_nav_pages"),
-				"parent" => "nav-setup",
-				"std" => mnt_get_category_array($shortname."_nav_pages")
-		),
 		$options = get_option( 'options_settings' );
 		?>
 		<input type="radio" name="options_settings[radio_field]" <?php if (isset($options['radio_field'])) checked( $options['radio_field'], 1 ); ?> value="1" /> <label>Lipsticks</label><br />
