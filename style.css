@@ -112,6 +112,7 @@ html {
 
 body {
 	margin: 0;
+	font-family: 'Century Gothic', 'Century Gothic', 'Apple Gothic, sans-serif;
 }
 
 article,
@@ -127,7 +128,7 @@ nav,
 section,
 summary {
 	display: block;
-	font-family: 'Century Gothic', 'Century Gothic', 'Apple Gothic', sans-serif;
+	
 }
 
 audio,
