@@ -729,6 +729,45 @@ color: pink;
 	}
 }
 
+@media screen and (max-width: 750px){
+//media querty for up to 750px for ipad portrait orientation 
+	#primary
+	#content,
+	#sidebar{
+	width:100%;}
+	#widgets .column{
+	margin: 0 2.5% 1em;
+	width:45%;}
+	.new-wrapper{
+	width: 100%;
+	height: 250px;
+	.site-main{
+	width: 100%
+	.content-area{
+	width: 100%}
+
+}	
+@media screen and (max-width:480px ){
+//media querty for up to 750px for iphone portrait orientation
+	#widgets .column{
+		margin: 0 0 1em;
+		width:100%;
+	}
+	#widgets .column: last-child{
+		margin-right: 0;
+	}
+	#primary img{
+		margin: 0 0 1em;
+		max-width: 100%
+	}	
+	.new-wrapper{
+	width: 100%;
+	
+	.mobile-only{
+	background: black;
+}
+}
+
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
