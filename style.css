@@ -729,8 +729,8 @@ color: pink;
 	}
 }
 
+/* Media for up to 750px for ipad portrait orientation */
 @media screen and (max-width: 750px){
-//media querty for up to 750px for ipad portrait orientation 
 	#primary
 	#content,
 	#sidebar{
@@ -747,8 +747,9 @@ color: pink;
 	width: 100%}
 
 }	
+
+*/ Media querty for up to 750px for iphone portrait orientation */
 @media screen and (max-width:480px ){
-//media querty for up to 750px for iphone portrait orientation
 	#widgets .column{
 		margin: 0 0 1em;
 		width:100%;
